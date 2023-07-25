@@ -1,0 +1,26 @@
+@import url(./reset.css);
+
+#wrap {
+  text-align: center;
+}
+#wrap-center {
+  display: inline-block;
+  width: 1280px;
+  background-color: pink;
+}
+#header {
+  text-align: left;
+}
+#header-hamburger {
+  display: inline-block;
+  margin-top: 18px;
+  padding: 10px;
+}
+#header-hamburger > div {
+  width: 26px;
+  height: 26px;
+  background: url(./assets/images/sp_main.png) -335px -284px/422px 405px;
+}
+#main {
+  height: 2000px;
+}
