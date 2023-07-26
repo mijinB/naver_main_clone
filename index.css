@@ -62,25 +62,65 @@
   background-color: pink;
 }
 #header {
+  position: relative;
   text-align: left;
 }
-#header-hamburger {
+#header-hamburger, #header-pay, #header-notice {
   display: inline-block;
-  margin-top: 18px;
+  position: absolute;
+  top: 18px;
   padding: 10px;
   border: none;
   background: none;
   cursor: pointer;
 }
-#header-hamburger:hover {
-  background-color: var(--color_option_bg);
-  border-radius: 50%;
+#header-hamburger {
+  left: -10px;
 }
-#header-hamburger > div {
+#header-hamburger:hover::before, #header-pay:hover::before, #header-notice:hover::before {
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--color_option_bg);
+  content: '';
+}
+#header-hamburger > div, #header-pay > div, #header-notice > div {
+  position: relative;
+  z-index: 1;
   width: 26px;
   height: 26px;
-  background: url(./assets/images/sp_main.png) -335px -284px/422px 405px;
+  background-image: url(./assets/images/sp_main.png);
+  background-size: 422px 405px;
+}
+#header-hamburger > div {
+  background-position: -335px -284px;
+}
+#header-pay {
+  right: 42px;
+  padding: 10px 8px;
+}
+#header-pay > div {
+  width: 30px;
+  background-position: -31px -316px;
+}
+#header-notice {
+  right: -10px;
+}
+#header-notice > div {
+  background-position: -364px -27px;
 }
 #main {
   height: 2000px;
+}
+.blind {
+  /* 스크린 리더기를 위한 설정 / display: none; 하면 화면에 text가 안 보이지만 스크린 리더기도 읽지 못 한다. */
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
 }
