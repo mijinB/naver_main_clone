@@ -192,7 +192,7 @@ html {
   height: 16px;
   background-position: -50px -270px;
 }
-#search-keyboard:hover:before {
+#search-keyboard:hover::before {
   display: block;
   width: 24px;
   height: 16px;
@@ -226,9 +226,6 @@ html {
 #nav li:nth-of-type(1) {
   margin-left: 0;
 }
-#nav li:nth-of-type(2) {
-  
-}
 #nav a {
   text-decoration: none;
 }
@@ -238,6 +235,54 @@ html {
 #nav a div {
   width: 44px;
   height: 44px;
+  margin: 0 auto;
+}
+/* #nav a div::before {
+  display: block;
+  width: 54px;
+  height: 54px;
+  background-image: url(./assets/images/sp_main.png);
+  background-position: 0px -128px;
+  background-size: 424px 409px;
+  content: '';
+} */
+#nav a div::after {
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  background-image: url(./assets/images/sp_main.png);
+  background-size: 424px 409px;
+  content: '';
+}
+#nav li:nth-of-type(1) a div::after {
+  background-position: -250px -90px;
+}
+#nav li:nth-of-type(2) a div::after {
+  background-position: -250px 0px;
+}
+#nav li:nth-of-type(3) a div::after {
+  background-position: -201px -98px;
+}
+#nav li:nth-of-type(4) a div::after {
+  background-position: -90px -209px;
+}
+#nav li:nth-of-type(5) a div::after {
+  background-position: 0px -209px;
+}
+#nav li:nth-of-type(6) a div::after {
+  background-position: -180px -209px;
+}
+#nav li:nth-of-type(7) a div::after {
+  background-position: -45px -209px;
+}
+#nav li:nth-of-type(8) a div::after {
+  background-position: -201px 0px;
+}
+#nav li:nth-of-type(9) a div::after {
+  background-position: -225px -209px;
+}
+#nav li:nth-of-type(10) a div::after {
+  background-position: -250px -135px;
 }
 
 #main {
