@@ -81,6 +81,13 @@ html {
 #header-hamburger {
   left: -10px;
 }
+#header-pay {
+  right: 42px;
+  padding: 10px 8px;
+}
+#header-notice {
+  right: -10px;
+}
 #header-hamburger:hover::before, #header-pay:hover::before, #header-notice:hover::before {
   position: absolute;
   top: 1px;
@@ -102,16 +109,9 @@ html {
 #header-hamburger > div {
   background-position: -335px -284px;
 }
-#header-pay {
-  right: 42px;
-  padding: 10px 8px;
-}
 #header-pay > div {
   width: 30px;
   background-position: -31px -316px;
-}
-#header-notice {
-  right: -10px;
 }
 #header-notice > div {
   background-position: -364px -27px;
@@ -128,12 +128,6 @@ html {
 #search > form:hover {
   box-shadow: 0 2px 4px 0 rgba(0,0,0,.12);
 }
-#search-svg {
-  display: inline-block;
-  position: relative;
-  padding: 17px 17px 17px 27px;
-  margin-right: 12px;
-}
 #search > form:focus-within #search-svg::after {
   display: block;
   position: absolute;
@@ -142,7 +136,13 @@ html {
   width: 1px;
   height: 20px;
   background-color: #e8ecee;
-  content: "";
+  content: '';
+}
+#search-svg {
+  display: inline-block;
+  position: relative;
+  padding: 17px 17px 17px 27px;
+  margin-right: 12px;
 }
 #search-svg svg {
   width: 24px;
@@ -181,14 +181,16 @@ html {
 #search-button {
   padding: 17px 27px 16px 10px;
 }
-#search-keyboard::before {
+#search-keyboard::before, #search-recent::before, #search-button::before {
   display: block;
-  width: 24px;
-  height: 16px;
   background-image: url(./assets/images/sp_main.png);
-  background-position: -50px -270px;
   background-size: 422px 405px;
   content: '';
+}
+#search-keyboard::before {
+  width: 24px;
+  height: 16px;
+  background-position: -50px -270px;
 }
 #search-keyboard:hover:before {
   display: block;
@@ -200,22 +202,15 @@ html {
   content: '';
 }
 #search-recent::before {
-  display: block;
   width: 10px;
   height: 6px;
-  background-image: url(./assets/images/sp_main.png);
   background-position: -412px -352px;
-  background-size: 422px 405px;
-  content: '';
 }
 #search-button::before {
   display: inline-block;
   width: 25px;
   height: 25px;
-  background-image: url(./assets/images/sp_main.png);
   background-position: -364px -132px;
-  background-size: 422px 405px;
-  content: '';
 }
 
 #nav > ul {
@@ -239,6 +234,10 @@ html {
 }
 #nav a:visited {
   color: black;
+}
+#nav a div {
+  width: 44px;
+  height: 44px;
 }
 
 #main {
