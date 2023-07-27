@@ -130,8 +130,19 @@ html {
 }
 #search-svg {
   display: inline-block;
+  position: relative;
   padding: 17px 17px 17px 27px;
   margin-right: 12px;
+}
+#search > form:focus-within #search-svg::after {
+  display: block;
+  position: absolute;
+  top: 20px;
+  right: 0;
+  width: 1px;
+  height: 20px;
+  background-color: #e8ecee;
+  content: "";
 }
 #search-svg svg {
   width: 24px;
