@@ -55,6 +55,7 @@
 html {
   font-size: 10.5px;
   line-height: 10.5px;
+  letter-spacing: -0.4px;
 }
 #wrap {
   text-align: center;
@@ -221,6 +222,8 @@ html {
   font-size: 1.4rem;
 }
 #nav li {
+  display: flex;
+  justify-content: center;
   width: 64px;
   margin-left: 4px;
 }
@@ -233,25 +236,22 @@ html {
 #nav a:visited {
   color: black;
 }
-#nav a div {
-  position: relative;
-  width: 44px;
-  height: 44px;
-  margin: 0 auto;
-}
-#nav a div::before {
+#nav .nav-img {
   display: block;
+  position: relative;
+}
+#nav .nav-img::before {
   position: absolute;
-  top: -3px;
-  left: -5px;
+  top: -2px;
+  left: -3px;
   width: 54px;
   height: 54px;
   background-image: url(./assets/images/sp_main.png);
   background-position: 0px -128px;
-  background-size: 424px 409px;
+  background-size: 422px 405px;
   content: '';
 }
-#nav a div::after {
+#nav .nav-img::after {
   display: inline-block;
   position: relative;
   z-index: 1;
@@ -259,41 +259,45 @@ html {
   height: 44px;
   margin: 2px;
   background-image: url(./assets/images/sp_main.png);
-  background-size: 424px 409px;
+  background-size: 422px 405px;
   content: '';
 }
-#nav li:nth-of-type(1) a div::after {
+#nav li:nth-of-type(1) .nav-img::after {
   background-position: -250px -90px;
 }
-#nav li:nth-of-type(2) a div::after {
+#nav li:nth-of-type(2) .nav-img::after {
   background-position: -250px 0px;
 }
-#nav li:nth-of-type(3) a div::after {
+#nav li:nth-of-type(3) .nav-img::after {
   background-position: -201px -98px;
 }
-#nav li:nth-of-type(4) a div::after {
+#nav li:nth-of-type(4) .nav-img::after {
   background-position: -90px -209px;
 }
-#nav li:nth-of-type(5) a div::after {
+#nav li:nth-of-type(5) .nav-img::after {
   background-position: 0px -209px;
 }
-#nav li:nth-of-type(6) a div::after {
+#nav li:nth-of-type(6) .nav-img::after {
   background-position: -180px -209px;
 }
-#nav li:nth-of-type(7) a div::after {
+#nav li:nth-of-type(7) .nav-img::after {
   background-position: -45px -209px;
 }
-#nav li:nth-of-type(8) a div::after {
+#nav li:nth-of-type(8) .nav-img::after {
+  width: 48px;
+  height: 48px;
+  margin: 0;
   background-position: -201px 0px;
 }
-#nav li:nth-of-type(9) a div::after {
+#nav li:nth-of-type(9) .nav-img::after {
   background-position: -225px -209px;
 }
-#nav li:nth-of-type(10) a div::after {
+#nav li:nth-of-type(10) .nav-img::after {
   background-position: -250px -135px;
 }
-#nav li a span {
+#nav .nav-text {
   display: inline-block;
+  width: 100%;
   margin-top: 7px;
 }
 
