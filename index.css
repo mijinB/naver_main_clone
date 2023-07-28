@@ -65,12 +65,12 @@ html {
   width: 1280px;
 }
 
-#header {
+header {
   position: relative;
   height: 64px;
   text-align: left;
 }
-#header-hamburger, #header-pay, #header-notice {
+header #header-hamburger, #header-pay, #header-notice {
   display: inline-block;
   position: absolute;
   top: 18px;
@@ -79,17 +79,17 @@ html {
   background: none;
   cursor: pointer;
 }
-#header-hamburger {
+header #header-hamburger {
   left: -10px;
 }
-#header-pay {
+header #header-pay {
   right: 42px;
   padding: 10px 8px;
 }
-#header-notice {
+header #header-notice {
   right: -10px;
 }
-#header-hamburger:hover::before, #header-pay:hover::before, #header-notice:hover::before {
+header #header-hamburger:hover::before, #header-pay:hover::before, #header-notice:hover::before {
   position: absolute;
   top: 1px;
   left: 1px;
@@ -99,7 +99,7 @@ html {
   background-color: var(--color_option_bg);
   content: '';
 }
-#header-hamburger > div, #header-pay > div, #header-notice > div {
+header #header-hamburger > div, #header-pay > div, #header-notice > div {
   position: relative;
   z-index: 1;
   width: 26px;
@@ -107,14 +107,14 @@ html {
   background-image: url(./assets/images/sp_main.png);
   background-size: 422px 405px;
 }
-#header-hamburger > div {
+header #header-hamburger > div {
   background-position: -335px -284px;
 }
-#header-pay > div {
+header #header-pay > div {
   width: 30px;
   background-position: -31px -316px;
 }
-#header-notice > div {
+header #header-notice > div {
   background-position: -364px -27px;
 }
 
@@ -214,38 +214,38 @@ html {
   background-position: -364px -132px;
 }
 
-#nav > ul {
+nav > ul {
   display: flex;
   justify-content: center;
   margin-top: 12px;
   line-height: 20px;
   font-size: 1.4rem;
 }
-#nav li {
+nav li {
   display: flex;
   justify-content: center;
   width: 64px;
   margin-left: 4px;
 }
-#nav li:nth-of-type(1) {
+nav li:nth-of-type(1) {
   margin-left: 0;
 }
 
-#nav li:nth-of-type(10) {
+nav li:nth-of-type(10) {
   width: 64px;
   height: 48px;
 }
-#nav a {
+nav a {
   text-decoration: none;
 }
-#nav a:visited {
+nav a:visited {
   color: black;
 }
-#nav .nav-img {
+nav .nav-img {
   display: block;
   position: relative;
 }
-#nav .nav-img::before {
+nav .nav-img::before {
   position: absolute;
   top: -2px;
   left: -3px;
@@ -256,7 +256,7 @@ html {
   background-size: 422px 405px;
   content: '';
 }
-#nav a:hover .nav-img::before {
+nav a:hover .nav-img::before {
   position: absolute;
   top: -3px;
   left: -5px;
@@ -267,10 +267,10 @@ html {
   background-size: 422px 405px;
   content: '';
 }
-#nav li:nth-of-type(10) a:hover .nav-img::before {
+nav li:nth-of-type(10) a:hover .nav-img::before {
   background-position: 0px -69px;
 }
-#nav .nav-img::after {
+nav .nav-img::after {
   display: inline-block;
   position: relative;
   z-index: 1;
@@ -281,52 +281,52 @@ html {
   background-size: 422px 405px;
   content: '';
 }
-#nav li:nth-of-type(1) .nav-img::after {
+nav li:nth-of-type(1) .nav-img::after {
   background-position: -250px -90px;
 }
-#nav li:nth-of-type(2) .nav-img::after {
+nav li:nth-of-type(2) .nav-img::after {
   background-position: -250px 0px;
 }
-#nav li:nth-of-type(3) .nav-img::after {
+nav li:nth-of-type(3) .nav-img::after {
   background-position: -201px -98px;
 }
-#nav li:nth-of-type(4) .nav-img::after {
+nav li:nth-of-type(4) .nav-img::after {
   background-position: -90px -209px;
 }
-#nav li:nth-of-type(5) .nav-img::after {
+nav li:nth-of-type(5) .nav-img::after {
   background-position: 0px -209px;
 }
-#nav li:nth-of-type(6) .nav-img::after {
+nav li:nth-of-type(6) .nav-img::after {
   background-position: -180px -209px;
 }
-#nav li:nth-of-type(7) .nav-img::after {
+nav li:nth-of-type(7) .nav-img::after {
   background-position: -45px -209px;
 }
-#nav li:nth-of-type(8) .nav-img::after {
+nav li:nth-of-type(8) .nav-img::after {
   width: 48px;
   height: 48px;
   margin: 0;
   background-position: -201px 0px;
 }
-#nav li:nth-of-type(9) .nav-img::after {
+nav li:nth-of-type(9) .nav-img::after {
   background-position: -225px -209px;
 }
-#nav li:nth-of-type(10) .nav-img::after {
+nav li:nth-of-type(10) .nav-img::after {
   background-position: -250px -135px;
 }
-#nav li:nth-of-type(10) a:hover .nav-img::after {
+nav li:nth-of-type(10) a:hover .nav-img::after {
   width: 22px;
   height: 6px;
   margin: 21px 13px;
   background-position: -201px -172px;
 }
-#nav .nav-text {
+nav .nav-text {
   display: inline-block;
   width: 100%;
   margin-top: 7px;
 }
 
-#main {
+main {
   height: 2000px;
 }
 
