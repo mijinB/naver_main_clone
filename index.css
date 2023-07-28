@@ -230,6 +230,11 @@ html {
 #nav li:nth-of-type(1) {
   margin-left: 0;
 }
+
+#nav li:nth-of-type(10) {
+  width: 64px;
+  height: 48px;
+}
 #nav a {
   text-decoration: none;
 }
@@ -250,6 +255,20 @@ html {
   background-position: 0px -128px;
   background-size: 422px 405px;
   content: '';
+}
+#nav a:hover .nav-img::before {
+  position: absolute;
+  top: -3px;
+  left: -5px;
+  width: 58px;
+  height: 58px;
+  background-image: url(./assets/images/sp_main.png);
+  background-position: -142px 0px;
+  background-size: 422px 405px;
+  content: '';
+}
+#nav li:nth-of-type(10) a:hover .nav-img::before {
+  background-position: 0px -69px;
 }
 #nav .nav-img::after {
   display: inline-block;
@@ -294,6 +313,12 @@ html {
 }
 #nav li:nth-of-type(10) .nav-img::after {
   background-position: -250px -135px;
+}
+#nav li:nth-of-type(10) a:hover .nav-img::after {
+  width: 22px;
+  height: 6px;
+  margin: 21px 13px;
+  background-position: -201px -172px;
 }
 #nav .nav-text {
   display: inline-block;
