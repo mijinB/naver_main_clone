@@ -329,13 +329,15 @@ nav .nav-text {
 main {
   display: flex;
   height: 2000px;
-  margin-top: 50px;
+  margin-top: 51px;
 }
 main section[id^=main] {
+  margin-bottom: 16px;
   border-radius: 8px;
   box-shadow: 0 0 0 1px #e3e5e8, 0 1px 2px 0 rgba(0,0,0,.04);
 }
 main aside[id$=ad] {
+  margin-bottom: 16px;
   border-radius: 8px;
   background-color: gray;
 }
@@ -344,7 +346,6 @@ main #main-left-ad {
 }
 main #main-right-ad {
   height: 240px;
-  margin-top: 16px;
 }
 main #main-left {
   width: 830px;
@@ -352,13 +353,38 @@ main #main-left {
 }
 main #main-news-stand {
   height: 426px;
-  margin-top: 16px;
+}
+main #main-shopping {
+  height: 560px;
 }
 main #main-right {
   width: 420px;
 }
 main #main-login {
   height: 164px;
+}
+main #main-issue-banner {
+  height: 56px;
+}
+main .weather-and-stock {
+  padding: 0 18px;
+}
+main .weather-and-stock > header {
+  height: 40px;
+  padding: 6px 0;
+  font-size: 1.5rem;
+  font-weight: 800;
+  line-height: 40px;
+}
+main .weather-and-stock > div {
+  height: 183px;
+  border-top: 1px solid var(--color_border_in);
+}
+main #main-weather {
+  height: 236px;
+}
+main #main-stock {
+  height: 236px;
 }
 
 .blind {
