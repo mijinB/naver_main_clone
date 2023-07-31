@@ -352,7 +352,63 @@ main #main-left {
   margin-right: 30px;
 }
 main #main-news-stand {
+  display: flex;
+  flex-direction: column;
   height: 426px;
+}
+main #main-news-stand-top {
+  flex: 1;
+  margin: 18px 20px;
+}
+main .bold {
+  color: var(--color_title);
+  font-weight: 800;
+}
+main #main-news-stand a {
+  text-decoration: none;
+}
+main #main-news-stand a:visited {
+  color: inherit;
+}
+main #main-news-stand a:hover {
+  text-decoration: underline;
+}
+main #main-news-stand header {
+  height: 23px;
+  margin-bottom: 17px;
+  color: rgba(8,8,8,.5);
+  font-size: 1.6rem;
+  line-height: 23px;
+}
+main #main-news-stand-sub-view {
+  height: 26px;
+  padding: 12px 20px;
+  background-color: var(--color_option_bg);
+  border-radius: 4px;
+}
+main #main-news-stand-grid {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 1px;
+  height: 222px;
+  margin-top: 18px;
+  border: 1px solid var(--color_border_in);
+  border-radius: 4px;
+  background-color: var(--color_border_in);
+}
+main #main-news-stand-grid > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background-color: white;
+}
+main #main-news-stand footer {
+  height: 36px;
+  padding: 10px 0 11px;
+  border-top: 1px solid var(--color_border_in);
+  line-height: 34px;
 }
 main #main-shopping {
   height: 560px;
@@ -361,7 +417,57 @@ main #main-right {
   width: 420px;
 }
 main #main-login {
-  height: 164px;
+  display: flex;
+  flex-direction: column;
+  height: 125px;
+  padding: 21px 20px 18px;
+  font-size: 1.4rem;
+  line-height: 20px;
+}
+main #main-login a {
+  text-decoration: none;
+}
+main #main-login-button {
+  height: 20px;
+  margin-top: 13px;
+  padding: 17px 0;
+  border: 1px solid rgba(0,0,0,.06);
+  border-radius: 4px;
+  background-color: #03c75a;
+  color: white;
+}
+main #main-login-button i {
+  display: inline-block;
+  vertical-align: top;
+  width: 72px;
+  height: 14px;
+  margin: 3px 8px 0 0;
+  background-image: url(./assets/images/sp_main.png);
+  background-position: -120px -166px;
+  background-size: 422px 405px;
+  content: '';
+}
+main #main-login > div:last-of-type {
+  margin-top: 16px;
+  color: var(--color_caption2);
+  font-size: 0;
+}
+main #main-login > div:last-of-type a {
+  font-size: 1.3rem;
+}
+main #main-login > div:last-of-type a:visited {
+  color: inherit;
+}
+main #main-login > div:last-of-type a:hover {
+  text-decoration: underline;
+}
+main #main-login > div:last-of-type > a:nth-of-type(2)::before, #main-login > div:last-of-type > a:nth-of-type(2)::after {
+  display: inline-block;
+  width: 1px;
+  height: 12px;
+  margin: 4px 12px 0;
+  background-color: var(--color_dot_divider);
+  content: '';
 }
 main #main-issue-banner {
   height: 56px;
